@@ -57,15 +57,6 @@ our homepage_.
 .. |weblate| image:: https://weblate.bubu1.eu/widgets/searxng/-/searxng/svg-badge.svg
    :target: https://weblate.bubu1.eu/projects/searxng/
 
-
-SearXNG is a fork of `searx`_:
-
-* `the differences with searx <https://github.com/searxng/searxng/issues/46>`_
-* `exhaustive changelog <https://github.com/searxng/searxng/wiki/Changes-from-version-1.0.0>`_
-
-.. _searx: https://github.com/searx/searx
-
-
 Contact
 """""""
 
@@ -73,7 +64,61 @@ Matrix: `#searxng:matrix.org <https://matrix.to/#/#searxng:matrix.org>`_
 
 IRC:  `#searxng on libera.chat <https://web.libera.chat/?channel=#searxng>`_ which is bridged to Matrix.
 
- 
+
+Differences with searx
+""""""""""""""""""""""
+
+SearXNG is a fork of `searx`_.
+Here some of the changes:
+
+.. _searx: https://github.com/searx/searx
+
+
+User experience
+~~~~~~~~~~~~~~~
+
+-  Huge update of the simple theme:
+
+   -  usable on desktop, tablet and mobile.
+   -  light and dark versions (you can choose in the preferences)
+   -  on the way to support RTL languages.
+
+-  the translations are up to date, you can contribute `here`_
+-  the preferences page has been updated:
+
+   -  you can see which engines is reliable or not. 
+   -  engines are grouped inside each tab.
+   -  each engine has a description
+
+-  it is easier to report a bug of an engine...
+-  ... but you can also disable the recording of the metrics on the
+   server.
+
+Setup
+~~~~~
+
+-  the docker image is built for the amd64, arm64 and arm/v7
+   architectures
+-  you don't need Morty to proxy the images.
+-  on the way to embedded filtron.
+-  up to date installation scripts
+
+Contributions are easier
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  readable debug log
+-  contributions to the themes are made `easier`_
+-  a lot of code cleanup and bug fixes
+-  the Python, NPM and Docker dependencies are up to date.
+
+Plugins
+~~~~~~~
+
+-  the hostname_replace.py plugin can remove results
+
+.. _here: https://weblate.bubu1.eu/projects/searxng/searxng/
+.. _easier: https://docs.searxng.org/dev/quickstart.html
+
 Translations
 """"""""""""
 
